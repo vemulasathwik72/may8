@@ -1,22 +1,21 @@
-public class MyClass {
+class Main {
 
-    // Public field
-    public int publicField = 10;
+  // create a method
+  public int addNumbers(int a, int b) {
+    int sum = a + b;
+    // return value
+    return sum;
+  }
 
-    // Public method
-    public void publicMethod() {
-        System.out.println("This is a public method.");
-    }
+  public static void main(String[] args) {
+    
+    int num1 = 25;
+    int num2 = 15;
 
-    // Main method to run the program
-    public static void main(String[] args) {
-        // Creating an object of MyClass
-        MyClass myObject = new MyClass();
-
-        // Accessing the public field
-        System.out.println("Public Field: " + myObject.publicField);
-
-        // Calling the public method
-        myObject.publicMethod();
-    }
+    // create an object of Main
+    Main obj = new Main();
+    // calling method
+    int result = obj.addNumbers(num1, num2);
+    System.out.println("Sum is: " + result);
+  }
 }
